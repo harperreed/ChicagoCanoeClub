@@ -1,5 +1,5 @@
 body { 
 background-image:url('/background.jpg');
-background-position: 100% 100%;
+background-position: inherit;
 
 }
