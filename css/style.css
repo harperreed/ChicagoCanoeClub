@@ -17,9 +17,7 @@ body {
 padding:0px; 
 font-family:Georgia, Times, serif;
 background-image:url('/background.jpg');
-background-repeat:no-repeat;
-background-attachment:fixed;
-background-position:center;
+background-position: 100% 100%;
 
 }
 
