@@ -3,39 +3,20 @@
         <title>
             Chicago Canoe Club
         </title>
+        <link href="css/style.css" rel=stylesheet> 
     </head>
     <body>
-        <h1>Chicago Canoe Club</h1>
-        <p>The Chicago canoe club is a small group of entrepreneurs who meet weekly.</p>
-        <p>Started by Moshe Tamssot, Harper Reed, Dylan Richard and Scott Van Den Plas in Wicker Park, Chicago, USA.</p>
-        <p>Come hang out.</p>
+        <h1><span class="text">Chicago Canoe Club</span></h1>
+            <p><span class="text">The Chicago canoe club is a small group of entrepreneurs who meet weekly.</span></p>
+            <p><span class="text">Started by <a href="http://www.innovationcenter.com/management.htm">Moshe Tamssot</a>, <a href="http://harperreed.org">Harper Reed</a>, <a href="http://detour1999.com/">Dylan Richard</a> and <a href="http://scottvdp.com">Scott Van Den Plas</a> in Wicker Park, Chicago, USA.</span></p>
+            <p><span class="text">Come hang out.</span></p>
               
+        <iframe src="http://dopeman.org/canoe/" border="0" id="schedule"></iframe>
 
         <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
         <script type="text/javascript"> 
             google.load("jquery", "1.3.2");
         </script> 
-        <script src="js/jquery.csv.min.js"></script>
-            <script>
-            $(document).ready(function() {
-                $.getJSON("http://dopeman.org/canoe/?callback=?",
-        function(data){
-            alert(data);
-              
-            });
-            });
-        </script>  
-<div id="images">
-
-</div>
-<script>$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?",
-        function(data){
-          $.each(data.items, function(i,item){
-            $("<img/>").attr("src", item.media.m).appendTo("#images");
-            if ( i == 3 ) return false;
-          });
-        });</script>
-        
     </body>
 </html>
 

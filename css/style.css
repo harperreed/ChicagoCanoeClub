@@ -1,0 +1,31 @@
+#schedule{
+    border: 0px solid;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+a{
+style: none;
+color: black;
+}
+
+body { padding:0px; font-family:Georgia, "Times New Roman", Times, serif;}
+
+span, a{
+    background: #000;
+    color: #fff;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+
+a{
+text-decoration: none;
+text-transform: uppercase;
+}
