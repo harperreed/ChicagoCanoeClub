@@ -10,6 +10,7 @@
         <p>Started by Moshe Tamssot, Harper Reed, Dylan Richard and Scott Van Den Plas in Wicker Park, Chicago, USA.</p>
         <p>Come hang out.</p>
               
+
         <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
         <script type="text/javascript"> 
             google.load("jquery", "1.3.2");
@@ -17,13 +18,24 @@
         <script src="js/jquery.csv.min.js"></script>
             <script>
             $(document).ready(function() {
-                csvfile = "http://spreadsheets.google.com/pub?key=0Aj54fbmg4pCfdDNaZlNhSkVoc1ZyRVUzVC1abkUzT0E&hl=en&single=true&gid=0&output=csv";
-                alert(csvfile);
-                jQuery.get(csvfile, function(data) { array = jQuery.csv()(data); });
-                // put all your jQuery goodness in here.
-                alert(array);
+                $.getJSON("http://dopeman.org/canoe/",
+        function(data){
+            alert(data);
+              
+            });
             });
         </script>  
+<div id="images">
+
+</div>
+<script>$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?",
+        function(data){
+          $.each(data.items, function(i,item){
+            $("<img/>").attr("src", item.media.m).appendTo("#images");
+            if ( i == 3 ) return false;
+          });
+        });</script>
+        
     </body>
 </html>
 
