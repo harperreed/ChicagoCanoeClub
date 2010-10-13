@@ -13,7 +13,15 @@ style: none;
 color: black;
 }
 
-body { padding:0px; font-family:Georgia, "Times New Roman", Times, serif; background: url('background.jpg');}
+body { 
+padding:0px; 
+font-family:Georgia, Times, serif;
+background-image:url('/background.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+
+}
 
 span, a{
     background: #000;
