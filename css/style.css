@@ -13,7 +13,7 @@ style: none;
 color: black;
 }
 
-body { padding:0px; font-family:Georgia, "Times New Roman", Times, serif;}
+body { padding:0px; font-family:Georgia, "Times New Roman", Times, serif; background: url('background.jpg');}
 
 span, a{
     background: #000;
