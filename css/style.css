@@ -34,33 +34,33 @@ blockquote:before, blockquote:after {
 
 
 html {
-	font-size:62.5%;
+    font-size:62.5%;
 }
 body { 
-	font-family:Georgia, Times, serif;
-	padding:0;
-	margin:0;
+    font-family:Georgia, Times, serif;
+    padding:0;
+    margin:0;
 }
 
 h1 {
-	font-size:3em;
-	padding:0.2em 0.5em;
-	margin:0.5em auto;
+    font-size:3em;
+    padding:0.2em 0.5em;
+    margin:0.5em auto;
 }
 h2 {
-	font-size:2.5em;
-	padding:0.2em 0.5em;
-	margin:0.5em auto;
+    font-size:2.5em;
+    padding:0.2em 0.5em;
+    margin:0.5em auto;
 }
 h3 {
-	font-size:2em;
-	padding:0.2em 0.5em;
-	margin:0.5em auto;
+    font-size:2em;
+    padding:0.2em 0.5em;
+    margin:0.5em auto;
 }
 p {
-	font-size:1.5em;
-	padding:0.2em 0.5em; 
-	margin:0.5em auto;
+    font-size:1.5em;
+    padding:0.2em 0.5em; 
+    margin:0.5em auto;
 }
 
 h1, h2, h3, p {
@@ -69,22 +69,22 @@ h1, h2, h3, p {
     color: #fff;
 }
 h1, h2, h3, p {
-	float:left;
-	clear:left;
+    float:left;
+    clear:left;
 }
 
 a{
-	text-decoration: none;
-	text-transform: uppercase;
-	color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
 }
 
 #upcoming-meetings {
-	margin:2em auto;
+    margin:2em auto;
 }
 .unloaded {
-	min-height:10em;
-	background:url(../img/load.gif) no-repeat center center transparent;
+    min-height:10em;
+    background:url(../img/load.gif) no-repeat center center transparent;
 }
 
 .intro h1, 
@@ -96,33 +96,36 @@ a{
     background: rgba(0,0,255, 0.3);
 }
 
+.tweetbutton{
+    margin-top: 10px;
+}
 
 
 #bg {
-	width:100%;
-	height:100%;
-	left:0;
-	top:0;
-	position:fixed;
-	z-index:0;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    position:fixed;
+    z-index:0;
 }
 #bg .attribution {
-	position:absolute;
-	bottom:0px;
-	right:0px;
-	padding:1em;
-	color:#FFF;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    padding:1em;
+    color:#FFF;
     background: #000;
     background: rgba(0,0,0, 0.6);
 }
 #bg img {
-	width:100%;
-	height:100%;
+    width:100%;
+    height:100%;
 }
 #wrapper {
-	z-index:1;
-	position:relative;
-	padding:1.5em;
+    z-index:1;
+    position:relative;
+    padding:1.5em;
 }
 
 /*Clears*/
@@ -132,10 +135,10 @@ h3:after,
 p:after,
 #upcoming-meetings:after,
 .intro:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
