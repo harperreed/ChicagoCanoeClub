@@ -63,7 +63,7 @@ p {
 	margin:0.5em auto;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, p {
     background: #000;
     background: rgba(0,0,0, 0.6);
     color: #fff;
@@ -90,8 +90,8 @@ a{
 .intro h1, 
 .intro h2, 
 .intro h3, 
-.intro p, 
-.intro span {
+.intro p
+ {
     background: #0000AA;
     background: rgba(0,0,255, 0.3);
 }
