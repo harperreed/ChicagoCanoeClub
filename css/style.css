@@ -1,35 +1,132 @@
-#schedule{
-    border: 0px solid;
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1;
+  text-align: left;
+  vertical-align: baseline;
+}
+a img, :link img, :visited img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol, ul, dl{
+  list-style: none;
+}
+q:before, q:after,
+blockquote:before, blockquote:after {
+  content: "";
 }
 
 
-a{
-style: none;
-color: black;
-}
 
+
+html {
+	font-size:62.5%;
+}
 body { 
-padding:0px; 
-font-family:Georgia, Times, serif;
-
+	font-family:Georgia, Times, serif;
+	padding:0;
+	margin:0;
 }
 
-span, a{
+h1 {
+	font-size:3em;
+	padding:0.2em 0.5em;
+	margin:0.5em auto;
+}
+h2 {
+	font-size:2.5em;
+	padding:0.2em 0.5em;
+	margin:0.5em auto;
+}
+h3 {
+	font-size:2em;
+	padding:0.2em 0.5em;
+	margin:0.5em auto;
+}
+p {
+	font-size:1.5em;
+	padding:0.2em 0.5em; 
+	margin:0.5em auto;
+}
+
+h1, h2, h3, p, span {
     background: #000;
+    background: rgba(0,0,0, 0.6);
     color: #fff;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:5px;
-    padding-right:5px;
 }
-
+h1, h2, h3, p {
+	float:left;
+	clear:left;
+}
 
 a{
-text-decoration: none;
-text-transform: uppercase;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#fff;
+}
+
+#upcoming-meetings {
+	margin:2em auto;
+}
+.unloaded {
+	min-height:10em;
+	background:url(../img/load.gif) no-repeat center center transparent;
+}
+
+.intro h1, 
+.intro h2, 
+.intro h3, 
+.intro p, 
+.intro span {
+    background: #0000AA;
+    background: rgba(0,0,255, 0.3);
+}
+
+
+
+#bg {
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	position:fixed;
+	z-index:0;
+}
+#bg img {
+	width:100%;
+	height:100%;
+}
+#wrapper {
+	z-index:1;
+	position:relative;
+	padding:1.5em;
+}
+
+/*Clears*/
+h1:after,
+h2:after,
+h3:after,
+p:after,
+#upcoming-meetings:after,
+.intro:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
