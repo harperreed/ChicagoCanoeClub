@@ -1,1 +1,29 @@
-<h1>CCC</h1>
+<html
+    <head>
+        <title>
+            Chicago Canoe Club
+        </title>
+    </head>
+    <body>
+        <h1>Chicago Canoe Club</h1>
+        <p>The Chicago canoe club is a small group of entrepreneurs who meet weekly.</p>
+        <p>Started by Moshe Tamssot, Harper Reed, Dylan Richard and Scott Van Den Plas in Wicker Park, Chicago, USA.</p>
+        <p>Come hang out.</p>
+              
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+        <script type="text/javascript"> 
+            google.load("jquery", "1.3.2");
+        </script> 
+        <script src="js/jquery.csv.min.js"></script>
+            <script>
+            $(document).ready(function() {
+                csvfile = "http://spreadsheets.google.com/pub?key=0Aj54fbmg4pCfdDNaZlNhSkVoc1ZyRVUzVC1abkUzT0E&hl=en&single=true&gid=0&output=csv";
+                alert(csvfile);
+                jQuery.get(csvfile, function(data) { array = jQuery.csv()(data); });
+                // put all your jQuery goodness in here.
+                alert(array);
+            });
+        </script>  
+    </body>
+</html>
+
